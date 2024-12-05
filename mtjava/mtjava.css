@@ -1,0 +1,281 @@
+* { box-sizing: border-box; }
+header, nav, main, footer { display: block; }
+body { background-color: #FCEBB6; 
+      background-image: url(background.gif);
+      color: #221811;
+      font-family: Verdana, Arial, sans-serif;
+	  background-image: url(background.gif);
+}
+#wrapper { background-color: #231814;
+           width: 80%;
+           margin-right: auto;
+		   margin-left: auto;
+           min-width: 900px;
+		   max-width: 1280px;
+		   box-shadow: 3px 3px 3px #666666; 
+}
+
+header { background-color: #D2B48C;
+        height: 150px;
+       background-image: url(javalogo.jpg);
+       background-repeat: no-repeat;
+}
+h1 { padding-top: 45px;
+    padding-left: 220px;
+	font-size: 3em; 
+}
+nav { text-align: center; 
+     font-weight: bold; 
+	 font-size: 1.5em;
+	 padding-top: 10px;
+	 float: left;
+	 width: 200px;
+}
+nav a { text-decoration: none; }
+nav a:link { color: #FEF6C2; }
+nav a:visited{ color: #D2B48C; }
+nav a:hover { color: #CC9933; }
+nav ul { list-style-type: none;
+       padding-left: 0; 
+}
+footer { background-color: #D2B48C;
+       font-size: small;
+	   font-style: italic;
+	   text-align: center;
+	   padding-bottom: 10px;
+	   border-top: 2px #221811 solid;
+}
+main { padding: 0 0 2em 0;
+      margin-left: 200px;
+	  background-color: #FEF6C2;
+}
+
+main h2, main h3, main h4, main p, main div, main ul, main dl { padding-left: 3em; padding-right: 2em; }
+h4 { background-color: #d2B48C;
+    font-size: 1.2em;
+	padding-left: 10px;
+	padding-bottom: 0;
+	text-transform: uppercase;
+	border-bottom: 1px solid #000033;
+	clear: left;
+}
+ul{
+	margin-left: 40px;
+	padding-left: 10px;
+	padding-bottom: 0;
+}
+.details { padding-left: 20%;
+          padding-right: 20%;
+		  overflow: auto;
+}
+.floatleft { float: left;
+             padding-right: 20px;
+			 padding-bottom: 20px; 
+}
+img { padding-left: 10px;
+     padding-right: 10px;
+}
+#heroroad { background-image: url(heroroad.jpg);
+           background-size: 100% 100%;
+		   height: 250px; }
+#heromugs { background-image: url(heromugs.jpg);
+           background-size: 100% 100%;
+		   height: 250px; }
+#heroguitar { background-image: url(heroguitar.jpg);
+           background-size: 100% 100%;
+		   height: 250px; }
+#mobile { display: none; }
+#desktop { display: inline; }
+
+/* Job Form Styles */
+#job-application-form {
+    max-width: 600px; /* Limit the form's width */
+    margin: 0 auto; /* Center the form */
+    padding: 1em;
+    background-color: #D2B48C;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Indent labels and inputs */
+.form-group {
+    margin-bottom: 1.5em;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px; /* Indentation */
+}
+
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group button {
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+    width: 90%;
+}
+
+/* Submit button styling */
+.form-group button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 0.7em 1.2em;
+}
+
+.form-group button:hover {
+    background-color: #0056b3;
+}
+@media only screen and (max-width: 1024px) {
+    /* Body element selector */
+    body {
+        margin: 0;
+        background-image: none;
+    }
+
+    /* Wrapper id selector */
+    #wrapper {
+        width: auto;
+        min-width: 0;
+        margin: 0;
+        padding: 0;
+        box-shadow: none;
+    }
+
+    /* Header element selector */
+    header {
+        border-bottom: 5px solid #FEF6C2;
+    }
+
+    /* H1 element selector */
+    h1 {
+        margin-top: 0;
+        margin-bottom: 1em;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        font-size: 2.5em;
+    }
+
+    /* Nav element selector */
+    nav {
+        float: none;
+        width: auto;
+        padding-top: 0;
+        margin: 10px;
+        font-size: 1.3em;
+    }
+
+    /* Nav li selector */
+    nav li {
+        display: inline-block;
+    }
+
+    /* Nav a selector */
+    nav a {
+        padding: 1em;
+        width: 8em;
+        font-weight: bold;
+        border-style: none;
+    }
+
+    /* Nav ul selector */
+    nav ul {
+        padding: 0;
+        margin: 0;
+    }
+
+    /* Hero selectors */
+    #heroroad,
+    #heromugs,
+    #heroguitar {
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Main element selector */
+    main {
+        padding: 0;
+        margin: 0;
+        font-size: 90%;
+    }
+}
+@media only screen and (max-width: 768px) {
+    /* Header element selector */
+    header {
+        background-image: url('javamini.jpg');
+        height: 128px;
+    }
+
+    /* H1 element selector */
+    h1 {
+        font-size: 2em;
+        text-align: center;
+        padding-left: 0;
+    }
+
+    /* Nav element selector */
+    nav {
+        margin: 0;
+    }
+
+    /* Nav anchor tags selector */
+    nav a {
+        display: block;
+        padding: 0.2em;
+        width: auto;
+        border-bottom: 1px solid #FEF6C2;
+    }
+
+    /* Nav list items selector */
+    nav li {
+        display: block;
+    }
+
+    /* Main element selector */
+    main {
+        padding-top: 1px;
+    }
+
+    /* H2 element selector */
+    h2 {
+        padding-top: 0.5em;
+        padding-right: 0;
+        padding-bottom: 0;
+        padding-left: 0.5em;
+        margin-right: 0.5em;
+    }
+
+    /* Details class selector */
+    .details {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    /* Hero selectors */
+    #heroroad,
+    #heromugs,
+    #heroguitar {
+        background-image: none;
+        height: auto;
+    }
+
+    /* Floatleft class selector */
+    .floatleft {
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+    }
+
+    /* Phone number display */
+    #mobile {
+        display: inline;
+    }
+    #desktop {
+        display: none;
+    }
+}
